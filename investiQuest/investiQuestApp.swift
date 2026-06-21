@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct investiQuestApp: App {
+
+    @State private var gameManager = GameManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(gameManager)
         }
     }
 }
